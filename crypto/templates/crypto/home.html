@@ -1,0 +1,17 @@
+{% extends "crypto/base.html" %}
+{% block content %}
+	<h2>Portfolio:</h2>
+	<br>
+	{% for coin in portfolio %}
+
+		<article class="media content-section">
+          <div class="media-body">
+            <h2><a class="article-title" href="#">{{ coin.Coin }}</a></h2>
+            <p class="article-content">Balance: {{ coin.Balance }}</p>
+          </div>
+        </article>
+
+		<h3></h3>
+		<h4></h4>
+	{% endfor %}
+{% endblock content %}
